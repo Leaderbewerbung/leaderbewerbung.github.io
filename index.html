@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr. Jenny Contino — Gouverneurin von San Andreas | Majestic RP</title>
+<meta name="description" content="Bewerbung von Dr. Jenny Contino als Governor of San Andreas auf Majestic RP. Partei: Für Los Santos — Freiheit. Ordnung. Transparenz.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#101a2e; --navy-2:#0b1322; --navy-3:#16223a;
+    --gold:#d4af5a; --gold-2:#f0d493; --text:#e8eaf0; --muted:#9aa3b5;
+    --border:rgba(212,175,90,.22);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--navy-2);color:var(--text);font-family:'Inter',sans-serif;line-height:1.65}
+  h1,h2,h3,.display{font-family:'Cormorant Garamond',serif}
+  .gold-text{background:linear-gradient(120deg,var(--gold-2),var(--gold) 55%,var(--gold-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+
+  /* Header */
+  header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(11,19,34,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:700;color:var(--gold);text-decoration:none;letter-spacing:.02em}
+  .badge{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);border:1px solid var(--border);border-radius:999px;padding:3px 10px;margin-left:10px}
+  nav a{color:var(--text);text-decoration:none;font-size:.85rem;font-weight:500;margin-left:22px;opacity:.85;transition:color .2s}
+  nav a:hover{color:var(--gold)}
+  @media(max-width:760px){nav a{margin-left:12px;font-size:.75rem}.badge{display:none}}
+
+  /* Hero */
+  .hero{min-height:92vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;
+    background:radial-gradient(ellipse at 50% 0%,rgba(212,175,90,.12),transparent 55%),linear-gradient(180deg,var(--navy) 0%,var(--navy-2) 100%)}
+  .hero::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 40%,rgba(0,0,0,.45));pointer-events:none}
+  .hero-inner{position:relative;z-index:1;padding:120px 24px 80px}
+  .kicker{font-size:.75rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:600}
+  .hero h1{font-size:clamp(2.6rem,7vw,4.6rem);font-weight:700;margin:18px 0 8px}
+  .hero .sub{font-size:1.05rem;color:var(--muted);max-width:620px;margin:0 auto}
+  .slogan{margin-top:26px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.4rem;color:var(--gold-2)}
+  .cta{margin-top:36px;display:inline-block;background:linear-gradient(120deg,var(--gold-2),var(--gold));color:var(--navy-2);font-weight:700;font-size:.9rem;padding:13px 32px;border-radius:6px;text-decoration:none;letter-spacing:.05em}
+  .cta:hover{filter:brightness(1.08)}
+
+  /* Sections */
+  section{padding:96px 0}
+  .divider{width:72px;height:2px;background:linear-gradient(90deg,var(--gold),transparent);margin:18px 0 40px}
+  h2{font-size:clamp(1.9rem,4vw,2.6rem);font-weight:700}
+  .grid{display:grid;gap:20px}
+  .grid-2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+  .grid-3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+  .card{background:var(--navy-3);border:1px solid var(--border);border-radius:12px;padding:26px;transition:transform .2s,box-shadow .2s}
+  .card:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(0,0,0,.35),0 0 0 1px rgba(212,175,90,.15)}
+  .card h3{color:var(--gold-2);font-size:1.3rem;margin-bottom:10px}
+  .card p,.card li{color:var(--muted);font-size:.92rem}
+  ul.clean{list-style:none}
+  ul.clean li{padding:8px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+  ul.clean li:last-child{border-bottom:none}
+  ul.clean b{color:var(--text);font-weight:600}
+  .tag{display:inline-block;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);border:1px solid var(--border);border-radius:999px;padding:3px 12px;margin-bottom:14px}
+
+  /* Table */
+  table{width:100%;border-collapse:collapse;font-size:.9rem}
+  th,td{padding:12px 16px;text-align:left;border-bottom:1px solid rgba(255,255,255,.07)}
+  th{color:var(--gold);font-size:.72rem;letter-spacing:.15em;text-transform:uppercase}
+  td:first-child{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--gold-2);font-weight:700;width:80px}
+  tr:hover td{background:rgba(212,175,90,.05)}
+
+  footer{background:var(--navy);border-top:1px solid var(--border);padding:48px 0;text-align:center}
+  footer .display{font-size:1.5rem;color:var(--gold);font-weight:700}
+  footer p{color:var(--muted);font-size:.82rem;margin-top:10px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div>
+      <a class="brand" href="#top">Dr. Jenny Contino<span class="badge">Majestic RP</span></a>
+    </div>
+    <nav>
+      <a href="#person">Person</a>
+      <a href="#vision">Vision</a>
+      <a href="#abteilungen">Abteilungen</a>
+      <a href="#raenge">Rangstruktur</a>
+      <a href="#gesetze">Gesetze</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero" id="top">
+  <div class="hero-inner">
+    <p class="kicker">Bewerbung · Governor of San Andreas</p>
+    <h1 class="gold-text">Dr. Jenny Contino</h1>
+    <p class="sub">Static ID #4310 · Partei „Für Los Santos"</p>
+    <p class="slogan">„Freiheit. Ordnung. Transparenz."</p>
+    <a class="cta" href="#person">Bewerbung lesen</a>
+  </div>
+</div>
+
+<!-- PERSON -->
+<section id="person">
+  <div class="wrap">
+    <p class="kicker">Meine Person</p>
+    <h2>Wer ist Dr. Jenny Contino?</h2>
+    <div class="divider"></div>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>Steckbrief</h3>
+        <ul class="clean">
+          <li><b>Name:</b> Dr. Jenny Contino</li>
+          <li><b>Static ID:</b> #4310</li>
+          <li><b>Alter (OOC):</b> 25</li>
+          <li><b>Partei:</b> Für Los Santos</li>
+          <li><b>Slogan:</b> Freiheit. Ordnung. Transparenz.</li>
+          <li><b>Online-Zeit:</b> 3–6 Stunden pro Tag</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Ziele als Leader</h3>
+        <p>Als Leader möchte ich alle bestehenden Mitglieder behalten und zusätzlich 20–30 neue Leute für die Government gewinnen. Aktivität, Struktur und ein starkes Miteinander stehen dabei an erster Stelle.</p>
+      </div>
+    </div>
+    <div class="card" style="margin-top:20px">
+      <h3>RP-Erfahrung</h3>
+      <ul class="clean">
+        <li><b>LSPD:</b> 1× Leader (3 Monate), zuvor Vize unter Sven Merger</li>
+        <li><b>FIB:</b> Deputy Chief of Police unter Dr. Luna Walker</li>
+        <li><b>Government:</b> Vice Gouverneur unter Happy Luckie</li>
+        <li><b>SANG:</b> 1× Leader, zuletzt Vize unter Ilya OnTop</li>
+        <li><b>LSCSD:</b> Undersheriff unter Toby Alvarez</li>
+        <li><b>EMS:</b> 1,5 Monate Leader</li>
+        <li><b>Weazel News:</b> Co Leader unter Sophia von Falken</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- VISION -->
+<section id="vision" style="background:var(--navy)">
+  <div class="wrap">
+    <p class="kicker">Unsere Vision</p>
+    <h2>Freiheit. Ordnung. Transparenz.</h2>
+    <div class="divider"></div>
+    <div class="grid grid-3">
+      <div class="card">
+        <span class="tag">Freiheit</span>
+        <h3>Sicherheit für alle Bürger</h3>
+        <p>Prozesse vereinfachen und Bürokratie abbauen. Klare und verständliche DEFCON-Erklärungen, damit jeder Bürger jederzeit weiß, was gilt und warum.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Ordnung</span>
+        <h3>Machtbalance &amp; Beamtentum</h3>
+        <p>Gewaltenteilung wahren und die Machtbalance zwischen den Behörden sichern. Ein starkes, professionelles Beamtentum und enge Kooperation zwischen allen Fraktionen.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Transparenz</span>
+        <h3>Gläserner Staat</h3>
+        <p>Gläserne Finanzen, keine verdeckten Gesetzesänderungen, regelmäßige Bürgerforen und Town Halls, ein öffentliches Urteilsregister, ein Beförderungsplan nach Leistung sowie vollständige Dokumentation via Discord und Tablet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABTEILUNGEN -->
+<section id="abteilungen">
+  <div class="wrap">
+    <p class="kicker">Struktur</p>
+    <h2>Die Abteilungen der Government</h2>
+    <div class="divider"></div>
+    <div class="grid grid-3">
+      <div class="card"><h3>Department of Justice</h3><p>Rechtsprechung, Staatsanwaltschaft und die Wahrung der Gesetze in San Andreas.</p></div>
+      <div class="card"><h3>Department of Treasury &amp; Human Services</h3><p>Finanzen, Budgets und soziale Dienste für die Bürger des Staates.</p></div>
+      <div class="card"><h3>Department of Health</h3><p>Gesundheitswesen und Zusammenarbeit mit dem EMS für das Wohl aller Bürger.</p></div>
+      <div class="card"><h3>Department of Homeland Security</h3><p>Innere Sicherheit des Staates — inklusive des United States Secret Service (USSS).</p></div>
+      <div class="card"><h3>Department of Defense</h3><p>Verteidigung und die Zusammenarbeit mit den Streitkräften von San Andreas.</p></div>
+      <div class="card"><h3>Bar Association</h3><p>Die Anwaltskammer — Ausbildung, Zulassung und Prüfung der Anwälte des Staates.</p></div>
+      <div class="card"><h3>Special Response Task Force</h3><p>Die SRTF — spezialisierte Einheit für besondere Lagen und Einsätze der Government.</p></div>
+      <div class="card"><h3>Press Secretary</h3><p>Pressearbeit und Kommunikation der Regierung gegenüber Bürgern und Medien.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- RANGSTRUKTUR -->
+<section id="raenge" style="background:var(--navy)">
+  <div class="wrap">
+    <p class="kicker">Hierarchie</p>
+    <h2>Rangstruktur</h2>
+    <div class="divider"></div>
+    <div class="card" style="padding:10px 0">
+      <table>
+        <thead><tr><th>Rang</th><th>Bezeichnung</th></tr></thead>
+        <tbody>
+          <tr><td>25</td><td>Governor</td></tr>
+          <tr><td>24</td><td>Vice Governor</td></tr>
+          <tr><td>23</td><td>Cabinet Secretary</td></tr>
+          <tr><td>22</td><td>Chief of Justice</td></tr>
+          <tr><td>21</td><td>Deputy Chief of Justice</td></tr>
+          <tr><td>20</td><td>State Secretary</td></tr>
+          <tr><td>19</td><td>Deputy State Secretary</td></tr>
+          <tr><td>18</td><td>Supreme Judge</td></tr>
+          <tr><td>17</td><td>Attorney General</td></tr>
+          <tr><td>16</td><td>Press Secretary</td></tr>
+          <tr><td>15</td><td>Supervisory Head Agent</td></tr>
+          <tr><td>14</td><td>Chief Judge</td></tr>
+          <tr><td>13</td><td>Head of Bar</td></tr>
+          <tr><td>12</td><td>Senior Federal Agent</td></tr>
+          <tr><td>11</td><td>Judge</td></tr>
+          <tr><td>10</td><td>State Attorney</td></tr>
+          <tr><td>09</td><td>Federal Agent</td></tr>
+          <tr><td>08</td><td>Senior Special Agent</td></tr>
+          <tr><td>07</td><td>Administrative Employee</td></tr>
+          <tr><td>06</td><td>Special Agent</td></tr>
+          <tr><td>05</td><td>Agent of Media</td></tr>
+          <tr><td>04</td><td>Agent</td></tr>
+          <tr><td>03</td><td>Trainee of Justice</td></tr>
+          <tr><td>02</td><td>Agent in Education</td></tr>
+          <tr><td>01</td><td>Suspended</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- GESETZE -->
+<section id="gesetze">
+  <div class="wrap">
+    <p class="kicker">Gesetzesänderungen</p>
+    <h2>Demokratisch statt vorschnell</h2>
+    <div class="divider"></div>
+    <div class="card">
+      <p>Unter meiner Führung wird es keine vorschnellen Gesetzesänderungen geben. Jede Änderung wird demokratisch mit den Behörden und den Bürgern abgestimmt. Zusätzlich führen wir nicht-bindende Abstimmungen ein, damit die Stimme der Bürger gehört wird, bevor Entscheidungen fallen.</p>
+      <p style="margin-top:18px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.25rem;color:var(--gold-2)">„Vielen Dank für das Lesen meiner Bewerbung — ich hoffe auf positives Feedback!"</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="display">Für Los Santos</p>
+    <p>Freiheit. Ordnung. Transparenz. · Bewerbung von Dr. Jenny Contino (#4310) · Majestic RP</p>
+  </div>
+</footer>
+
+</body>
+</html>
